@@ -1,8 +1,8 @@
 import { Socket } from "socket.io";
 import { io } from "socket.io-client";
 
-export const backendServer = "http://localhost:3001/routes";
-export const socket = io('http://192.168.1.104:3001');
+export const backendServer = "http://localhost:3003/routes";
+export const socket = io('http://192.168.1.104:3003');
 
 export const Skill_data = [
     {

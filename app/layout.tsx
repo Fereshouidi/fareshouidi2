@@ -15,6 +15,7 @@ import StatusBanner from "@/componnents/sub/statusBanner";
 import ProjectDetailsSection from "@/componnents/main/projectDetailsSection";
 import MessageComposer from "@/componnents/sub/messageComposer";
 import AnswerSec from "@/componnents/sub/answerSec";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -55,6 +56,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/fares.jpg" />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} w-full h-full bg-red-500  antialiased overflow-y-scroll overflow-x-hidden relative`}
         style={{backgroundColor: '#030014'}}

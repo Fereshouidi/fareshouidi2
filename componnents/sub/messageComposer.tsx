@@ -64,6 +64,8 @@ const MessageComposer = ({
         if (!data.newClient) return;
         localStorage.setItem("clientToken", data.newClient.token);
         setClient(data.newClient);
+        console.log("New client added:", data.newClient);
+        
     };
 
     const handleGetClientResponse = (data: any) => {
@@ -92,12 +94,16 @@ const MessageComposer = ({
     const handleGetConversationsResponse = (data: any) => {
         if (!data.conversations || data.conversations.length < 1) return;
         setConversation(data.conversations[0]);
+        console.log("Conversations received:", data.conversations);
+        
     };
 
     const handleAddConversation = (data: any) => {
         if (!data.newConversation) return;
         localStorage.setItem("conversationId", data.newConversation._id);
         setConversation(data.newConversation);
+        console.log("New conversation added:", data.newConversation);
+        
     };
 
     socket.on("get-conversations-response", handleGetConversationsResponse);
