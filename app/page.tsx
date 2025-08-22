@@ -1,6 +1,5 @@
 import AboutMe from "@/componnents/main/aboutMe";
 import Contact from "@/componnents/main/contact";
-import Encryption from "@/componnents/main/encryption";
 import Footer from "@/componnents/main/footer";
 import Hero from "@/componnents/main/hero";
 import Projects from "@/componnents/main/projects";

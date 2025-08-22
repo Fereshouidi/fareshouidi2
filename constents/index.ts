@@ -1,8 +1,8 @@
 import { Socket } from "socket.io";
 import { io } from "socket.io-client";
 
-export const backendServer = "http://localhost:3003/routes";
-export const socket = io('http://192.168.1.104:3003');
+export const backendServer = "https://fareshouidi2-backend.vercel.app/routes";
+export const socket = io('https://fareshouidi2-backend.vercel.app');
 
 export const Skill_data = [
     {
