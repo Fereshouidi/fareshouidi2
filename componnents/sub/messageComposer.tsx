@@ -15,7 +15,8 @@ interface MessageComposerParams {
     setAnswer: (value: string) => void
     textDirection?: 'ltr' | 'rtl', 
     isTherAnswer: boolean,
-    setIsTherAnswer: (value: boolean) => void
+    setIsTherAnswer: (value: boolean) => void,
+    setTextDirection: (value: 'ltr' | 'rtl') => void
 }
 
 const MessageComposer = ({
@@ -25,7 +26,8 @@ const MessageComposer = ({
     setAnswer,
     textDirection, 
     isTherAnswer, 
-    setIsTherAnswer
+    setIsTherAnswer,
+    setTextDirection
 }: MessageComposerParams) => {
 
     const setBanner = useContext(StatusBannerContext)?.setStatusBanner;

@@ -87,6 +87,7 @@ export default function RootLayout({
               textDirection={textDirection}
               isTherAnswer={isTherAnswer}
               setIsTherAnswer={setIsTherAnswer}
+              setTextDirection={setTextDirection}
             />
 
             <AnswerSec
