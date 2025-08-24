@@ -82,7 +82,6 @@ const HeroContent = () => {
                 alt='work icons'
                 height={650}
                 width={650}
-                // className='absolute top-5 right-0'
             />
         </motion.div>}
 

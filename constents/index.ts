@@ -1,4 +1,3 @@
-import { Socket } from "socket.io";
 import { io } from "socket.io-client";
 
 export const backendServer = "https://fareshouidi2-backend.vercel.app/routes";
@@ -99,7 +98,7 @@ export const Skill_data = [
     },
     {
       name: "LinkedIn",
-      src: "/linkedIn.png",
+      src: "/linkedin.png",
       url: "https://www.linkedin.com/in/fares-houidi-b93346305",
     }
   ];
