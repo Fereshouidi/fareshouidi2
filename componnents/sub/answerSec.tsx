@@ -61,7 +61,7 @@ const AnswerSec = ({answer, textDirection, isTherAnswer, setIsTherAnswer}: Answe
     <div id='answer-sec'
         ref={dragRef}
         style={style}
-        className={`${isTherAnswer? '' : 'invisibles'} rounded-3xl overflow-hidden max-h-[70vh] sm:max-h-[90vh] z-[888]`}
+        className={`${isTherAnswer? '' : 'invisible'} rounded-3xl overflow-hidden max-h-[70vh] sm:max-h-[90vh] z-[888]`}
     >
         <div className='header draged-header text-white' onMouseDown={handleMouseDown}>
             <div id='speaker' style={styleImage}>
