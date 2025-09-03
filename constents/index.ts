@@ -1,7 +1,7 @@
 import { io } from "socket.io-client";
 
-export const backendServer = "https://fareshouidi2-backend.vercel.app/routes";
-export const socket = io('https://fareshouidi2-backend.vercel.app');
+export const backendServer = "https://fareshouidi2backend.onrender.com/routes";
+export const socket = io('https://fareshouidi2backend.onrender.com');
 
 export const Skill_data = [
     {

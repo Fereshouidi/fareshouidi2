@@ -55,7 +55,7 @@ const MessageComposer = ({
     // }, [messageText])
 
     useEffect(() => {
-    const clientToken = localStorage.getItem("clientToken");
+    const clientToken = localStorage.getItem("clientToken") || undefined;
 
     socket.emit("get-client", {
         conversationId: conversation?._id,
@@ -84,7 +84,7 @@ const MessageComposer = ({
     }, [conversation?._id]);
 
     useEffect(() => {
-    const conversationId = localStorage.getItem("conversationId");
+    const conversationId = localStorage.getItem("conversationId") || undefined;
 
     socket.emit("get-conversations", {
         _id: conversationId,
