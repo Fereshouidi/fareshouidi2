@@ -16,7 +16,7 @@ const StatusBanner = () => {
 
   return (
     <div 
-        className={`flex fixed top-0 left-0 w-full h-[100vh] backdrop-blur-sm z-[990] justify-center`}
+        className={`flex fixed top-0 left-0 w-full h-[100vh] backdrop-blur-sm z-[999] justify-center`}
         onClick={() => setStatusBanner(false)}
     >
         <div 
