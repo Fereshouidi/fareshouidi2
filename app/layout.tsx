@@ -12,7 +12,7 @@ import { StatusBannerParams } from "@/types";
 import StatusBanner from "@/componnents/sub/statusBanner";
 import MessageComposer from "@/componnents/sub/messageComposer";
 import AnswerSec from "@/componnents/sub/answerSec";
-import Head from "next/head";
+// import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
