@@ -53,11 +53,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/fares.jpg" />
-      </Head>
+
       <body
-        className={`${geistSans.variable} ${geistMono.variable} w-full h-full bg-red-500  antialiased overflow-y-scroll overflow-x-hidden relative`}
+        className={`${geistSans.variable} ${geistMono.variable} w-full h-full antialiased overflow-y-scroll overflow-x-hidden relative`}
         style={{backgroundColor: '#030014'}}
       >
         <StatusBannerContext.Provider value={{statusBanner, setStatusBanner: handleStatusBanner}}>
