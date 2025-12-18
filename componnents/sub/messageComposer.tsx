@@ -173,6 +173,13 @@ const MessageComposer = ({
 
 
     const sendMessage = async () => {
+
+        console.log(
+            client?._id,
+            messageText,
+            isWaitingForAnswer
+        );
+        
         if (
             !client?._id || 
             !messageText || 
